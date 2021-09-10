@@ -1,0 +1,167 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+*{
+    box-sizing: border-box;
+    margin: 0px auto;  
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+    background-color: #ebebeb;
+    width: 100%vh;
+}
+
+header{    
+    background-color:#EAC926;
+    border-bottom: 1px solid;
+}
+.top{
+    display: flex;
+    padding: 5%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav{
+    text-align: center;
+ margin: auto;
+}
+i,.fa-search{
+    font-size:2em;
+    margin-bottom: 10px;
+}
+
+
+.cont-logo{
+    width:50%;
+}
+
+.logo{
+    width: 100%;
+    
+}
+
+.search-bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color:#ffff;
+    padding:.5rem;
+    
+    
+}
+.search{
+    width:100%;
+    margin: 0 2px;
+    border: none;
+    outline: none;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.top2{
+    display: flex;
+}
+
+
+
+
+
+.burger-menu{ 
+    text-align: center;
+    background-color: #1259c3;
+    margin:auto;
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+
+.burger-menu i{
+    margin-top: 10px;
+    color: #ebebeb;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+
+h3{
+    font-size:24px;
+}
+
+
+footer{     
+    text-align: center;
+
+}
+section ul{
+padding-left: 0;
+}
+
+
+footer  ul i{
+    color:#03264C;
+    font-size: 2em;
+    margin-bottom:10px;
+}
+
+
+
+img{
+    display: block;
+    max-width: 100%;
+  }
+
+
+i.fa-truck{
+    color:  #39b54a;
+    font-size: 1em;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    padding: 5px;
+    position:relative;
+    top:-45px;
+    left: 80%;
+
+ 
+}
+
+
+
+
+@media(min-width:361px){
+    .nav1,.nav2{
+        display:none;
+    }
+    
+
+}
+@media(min-width:769px){
+    .nav1,.nav2{
+        display: flex;
+        flex-grow: .2;
+        width: 30%;
+    }
+    .nav1{
+        align-items: center;
+    }
+    .burger-menu i,.burger-menu{
+        display: none;
+    }
+    .top{
+        flex-wrap:unset;
+    }
+}
