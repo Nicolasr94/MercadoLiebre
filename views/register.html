@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Mercado Liebre </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c91d94187c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="cont-logo"><img class="logo" src='images\logo-mercado-liebre.svg'>
+             </div>
+            
+            <div class="search-bar">
+            <input type="text" class="search" action="GET" placeholder="Buscar productos,marcas">
+            <div class="fas fa-search"></div>
+            </div>
+            <div class='nav'><i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de creditos
+            </div>
+            </div> <!---- Cierre TOP --->
+        <div class="top2">
+            <ul class="nav1">
+            <li>Ofertas</li>
+            <li>Tiendas Oficiales</li>
+            <li>Vender</li>
+            <li>Ayuda</li>
+            </ul>
+            <ul class="nav2">
+            <a href="register"><li>Crea tu cuenta <i class="far fa-address-card"></i> </li></a>  
+            <a href="login"><li>Ingresa <i class="fas fa-sign-in-alt"></i></li></a> 
+            <li>Mis compras <i class="fas fa-shopping-basket"></i></li> 
+            </ul>
+        </div>                                          
+        <div class="burger-menu">  <!-- Menu HAMBURGUESA -->
+        <i class="fas fa-bars"></i><!-- Menu HAMBURGUESA -->            
+        </div>
+    </header>                                   <!-- Cierre HEADER-->
+
+    <form action="/" method="POST">
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="nombre">
+        </div>
+
+        <div>
+            <label>Apellido:</label>
+            <input type="text" name="apellido">
+        </div>
+
+        <div>
+            <label>Nombre de usuari@:</label>
+            <input type="text" name="user">
+        </div>
+
+        <div>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fecha-nacimiento">
+        </div>
+
+        <div>
+            <label>Domicilio:</label>
+            <input type="text" name="domicilio">
+        </div>
+
+        <div>
+            <label>Queres comprar o vender?:</label>
+            <input type="checkbox" name="vender"><label>Vender</label> <input type="checkbox" name="comprar"><label>Comprar</label>
+            
+        </div>
+
+        <div>
+            <label>Categorias de interes:</label>
+            <select name="categoria">
+                <option value="Hogar">Hogar</option>    
+                <option value="indumentaria">Indumentaria</option>
+                <option value="electro">Electro</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Foto de perfil:</label>
+            <input type="file" name="foto">
+        </div>
+
+        <div>
+            <label>Contraseña:</label>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <label>Confirma tu contraseña:</label>
+            <input type="password" name="password">
+            
+        </div>
+
+        <div>
+            <a href="/">
+            <button type="submit">Enviar </button>
+            </a>
+        </div>
+
+        <div>
+            <button type="reset">Borrar datos</button>
+        </div>
+
+
+    </form>
+</body>
+</html>
