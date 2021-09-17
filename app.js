@@ -4,7 +4,7 @@ const path = require('path');
 const publicPath = path.resolve(__dirname, './public');
 const PORT= procees.env.PORT || 3000;
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(PORT, function() {
     console.log("servidor corriendo en puerto 3000")
 })
 
