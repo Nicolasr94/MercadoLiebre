@@ -9,7 +9,7 @@ app.listen(3000,() =>{
 });
 
 
-app.get('/', function(req, res){
+app.get('/home', function(req, res){
     res.sendFile(path.join(__dirname,'/views/home.html'));
 })
 
