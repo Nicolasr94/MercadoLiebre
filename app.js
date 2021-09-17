@@ -1,12 +1,18 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const publicPath = path.resolve(__dirname, './public')
-app.use(express.static(publicPath))
+const publicPath = path.resolve(__dirname, './public');
+const PORT= procees.env.PORT || 3000;
 
-app.listen(3000,() =>{
-    console.log("funciona")
-});
+app.listen(process.env.PORT || 3000, function() {
+    console.log("servidor corriendo en puerto 3000")
+})
+
+app.use(express.static(publicPath));
+
+// app.listen(3000,() =>{
+//     console.log("funciona")
+// });
 
 
 app.get('/home', function(req, res){
