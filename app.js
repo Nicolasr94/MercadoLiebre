@@ -15,7 +15,7 @@ app.use(express.static(publicPath));
 // });
 
 
-app.get('/home', function(req, res){
+app.get('/', function(req, res){
     res.sendFile(path.join(__dirname,'/views/home.html'));
 })
 
