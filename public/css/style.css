@@ -465,4 +465,8 @@ text-align: center;
 
         flex-basis: 30%;
     }
+
+.article
+{ flex-basis: 20%;
+    }
 }
