@@ -4,7 +4,8 @@ Azul: #03264C;
 Celeste: #1259c3;
 Gris oscuro: #666;
 Gris claro: #ebebeb;
-Verde: #39b54a; */
+Verde: #39b54a;
+color-btn:#0022AA; */
 
 *{
     box-sizing: border-box;
@@ -22,8 +23,11 @@ body{
 header{    
     background-color:#EAC926;
     border-bottom: 1px solid;
-   
+        position: fixed;
+        top: 0;
+        z-index: 100;
 }
+
 .top{
     display: flex;
     padding: 5%;
@@ -76,10 +80,6 @@ ul{
 .top2{
     display: flex;
 }
-
-
-
-
 
 .burger-menu{ 
     text-align: center;
@@ -158,16 +158,30 @@ h3{
 }
 
 
-footer{     
+.footer-section{     
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 
 }
+
+.footer-i-p{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-footer{
+    display: block;
+}
+
 section ul{
 padding-left: 0;
 }
 
 
-footer  ul i{
+footer i{
     color:#03264C;
     font-size: 2em;
     margin-bottom:10px;
@@ -202,25 +216,182 @@ i.fa-truck{
     transform: rotateZ(-90deg);
 }
 
-header{
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
+
 
 .product-name{
     display: none;
 }
 
+.fa-credit-card:hover,.fa-gift:hover,.fa-user-shield:hover{
+    color: blue;
+}
 
 
-@media(min-width:361px){
+
+   
+}
+
+
+.article:hover{
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
+.article:hover .product-name{
+    display: block;
+}
+
+/* ----------- HOME ------------ */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width:90vw;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    margin-bottom:10%;
+  
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font:bold;
+    
+}
+
+.items-input{
+    text-align: center;
+    width:300px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    
+}
+.items-input:focus{
+    border: 1px solid blue;
+    border-color:blue;
+    border-radius: 5px;
+}
+
+.items-input:hover{
+    border: 1px solid blue;
+    border-color:blue;
+}
+
+.chekbox{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.chek-perfil{
+    margin-left: 20px;
+}
+
+.file{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.chek-cate{
+    margin-top:5px;
+}
+.select-perfil{
+    text-align: center;
+}
+
+.cont-btn-send{
+    text-align: center;
+    width:50vw;
+
+}
+
+.cont-btn-reset{
+    text-align: center;
+    width: 50vw;
+}
+
+.btn-send{
+    width: 50%;
+    margin-top:20px;
+    font-size:20px;    
+    background-color: #1259c3;
+    color: #ebebeb;
+    border-radius: 2px;
+}
+.btn-send:hover{
+    background-color:#0022AA;
+}
+
+.btn-reset{
+    width: 30%;
+    margin-top:20px;
+    font-size:20px;
+    background-color: #1259c3;
+    color: #ebebeb;
+}
+.btn-reset:hover{
+    background-color:red;
+}
+
+/* ----------- REGISTER ------------ */
+
+.formulario-user{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:20px;
+    margin-bottom:10%;
+  
+    
+}
+
+.items-user{
+width:90%;
+margin-top: 20px;
+font-size:16px;
+}
+
+.input-user{
+width: 90%;
+text-align: center;
+}
+
+.content-btn{
+    width: 100%;
+}
+
+.btn-user{
+    margin-top:20px;
+    font-size:16px;
+    width: 80%;
+    height: 100%;
+    background-color: #1259c3;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #ebebeb;
+}
+
+.btn-user:hover{
+    background-color:#0022AA;
+}
+
+
+
+
+@media(min-width:350px){
     .nav1,.nav2{
         display:none;
     }
     .product-name{
         display: none;
-    }  
+    }
+    .formulario{
+        margin: top 18px;
+    }
 
 }
 
@@ -230,6 +401,9 @@ header{
     }
     .banner{
         margin-top:0px
+    }
+    .formulario{
+        margin-top:0;
     }
 
    
@@ -266,95 +440,24 @@ header{
         position:static;
     }
 }
+
+
 @media(min-width:1000px){
-    .article{flex-basis: 20%;
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        width:50vw;
+        box-shadow:none
+      
     }
-}
 
-.article:hover{
-   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .footer-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-}
+    .footer-i-p{
 
-.article:hover .product-name{
-    display: block;
-}
-
-/* ----------- HOME ------------ */
-
-.formulario{
-display: flex;
- flex-direction: column;
-}
-
-.items{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    
-}
-
-.items-input{
-    text-align: center;
-    width:300px;
-    border-radius: 2px;
-    border: none;
-    outline: none;
-}
-
-.chekbox{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.chek-perfil{
-    margin-left: 20px;
-}
-
-.file{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.chek-cate{
-    margin-top:5px;
-}
-.select-perfil{
-    text-align: center;
-}
-/* ----------- REGISTER ------------ */
-
-.formulario-user{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin:20px;
-
-}
-
-.items-user{
-width:90%;
-margin-top: 20px;
-font-size:16px;
-}
-
-.input-user{
-width: 90%;
-text-align: center;
-}
-
-.content-btn{
-    width: 100%;
-}
-.btn-user{
-    margin-top:20px;
-    font-size:16px;
-    width: 80%;
-    height: 100%;
-    background-color: #1259c3;
-    border-radius: 3px;
-    border: none;
-    outline: none;
-    color: #ebebeb;
+        flex-basis: 30%;
+    }
 }

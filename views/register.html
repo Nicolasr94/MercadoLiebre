@@ -46,43 +46,43 @@ rel="stylesheet">
         <i class="fas fa-bars"></i><!-- Menu HAMBURGUESA -->            
         </div>
     </header>
-    <img class="banner"src='images\img-home-banner.jpg'>                                    <!-- Cierre HEADER-->
-
-    <form  class="formulario" action="/" method="POST">
+               <!-- Cierre HEADER-->
+               <img class="banner"src='images\img-home-banner.jpg'> 
+    <form  class="formulario" action="home" method="GET">
         <div class="items">
-            <label>Nombre:</label>
+            <label>Nombre</label>
             <input class="items-input" type="text" name="nombre" required  required minlength="3">
         </div>
 
         <div class="items">
-            <label>Apellido:</label>
+            <label>Apellido</label>
             <input class="items-input" type="text" name="apellido" required required minlength="3">
         </div>
 
         <div class="items">
-            <label>Nombre de usuari@:</label>
+            <label>Nombre de usuari@</label>
             <input class="items-input" type="text" name="user" required required minlength="3">
         </div>
 
         <div class="items">
-            <label>Fecha de nacimiento:</label>
+            <label>Fecha de nacimiento</label>
             <input class="items-input" type="date" name="fecha-nacimiento" required>
         </div>
 
         <div class="items">
-            <label>Domicilio:</label>
+            <label>Domicilio</label>
             <input class="items-input" type="text" name="domicilio" required>
         </div>
 
         <div class="select-perfil">
-            <label>Perfil del Usuario:</label>
-            <br>
+            <label class="items">Perfil del Usuario</label>
+            
             <input class="chek-perfil" type="checkbox" name="vendedor"><label>Vendedor</label> <input class="chek-perfil" type="checkbox" name="comprador"><label>Comprador</label required="required">
             
         </div>
 
         <div class="chekbox">
-            <label>Categorias de interes:</label>
+            <label class="items">Categorias de interes:</label>
                 <div><input class="chek-cate"type="checkbox" name="moda"><label>Moda</label></div>
                 <div><input class="chek-cate"type="checkbox" name="hogar"><label>Hogar</label></div>
                 <div><input class="chek-cate"type="checkbox" name="electro"><label>Electro</label></div>
@@ -90,33 +90,60 @@ rel="stylesheet">
                 <div><input class="chek-cate"type="checkbox" name="vidaSana"><label>Vida sana</label></div>       
         </div>
 
-        <div class="file">
+        <div class="items">
             <label>Foto de perfil:</label>
             <input type="file" name="foto">
         </div>
 
         <div class="items">
-            <label>Contraseña:</label>
+            <label>Contraseña</label>
             <input class="items-input" type="password" name="password" required minlength="6">
         </div>
 
         <div class="items">
-            <label>Confirma tu contraseña:</label> <br>
+            <label>Confirma tu contraseña</label> <br>
            
             <input class="items-input" type="password" name="password">
             
         </div>
 
-        <div>
-            <a href="home">
-            <button type="submit">Enviar </button>
+        <div class="cont-btn-send">
+            <a href="/home">
+            <button class="btn-send" type="submit">Enviar </button>
             </a>
         </div>
 
-        <div>
-            <button type="reset">Borrar datos</button>
+        <div class="cont-btn-reset">
+            <button class="btn-reset" type="reset">Borrar datos</button>
         </div>
 
     </form>
+
+    <footer>
+        <section class="footer-section">
+                
+                    <div class="footer-i-p">
+                        <i class="fas fa-credit-card"></i>
+                        <strong>Paga con tarjeta o en efectivo</strong>
+                        <p>Con Mercado Liebre Cash, tenes cuotas sin interes  con tarjeta o efectivo en puntos de pago. Y siempre es seguro!</p>
+                    </div>
+                    <div class="footer-i-p">
+                        <i class="fas fa-gift"></i>
+                        <strong>Envio gratis desde $2500</strong>
+                        <p>Solo por estar registrad@ en Mercado Liebre tenes envios gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                    </div>
+                                      
+                    <div class="footer-i-p">
+                        <i class="fas fa-user-shield"></i>  
+                        <strong>Seguridad, de principio a fin</strong>
+                        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estas siempre protegid@</p>
+                    </div>
+
+                    <div class="item-footer">
+                        <p>Copyright © 1999-2020 MercadoLiebre S.R.L</p>
+                    </div>
+                
+         </section>
+        </footer>
 </body>
 </html>
