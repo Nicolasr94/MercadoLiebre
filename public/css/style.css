@@ -386,6 +386,9 @@ text-align: center;
     .formulario{
         margin: top 18px;
     }
+    .article:hover .product-name{
+        display: block;
+    }
 
 }
 
