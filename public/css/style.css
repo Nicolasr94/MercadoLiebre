@@ -437,6 +437,14 @@ text-align: center;
 
 
 @media(min-width:1000px){
+    .input-user{
+        width: 100%;
+        text-align: center;
+        }
+    .items-user{
+        display: flex;
+        flex-direction: column;
+    }
     .formulario{
         display: flex;
         flex-direction: column;
